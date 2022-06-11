@@ -1,5 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>ADD.HTML</h1>
+<div class='container'>
+    <h1>ADD.HTML</h1>
+    <h2>Add a new car to the database</h2>
+    <form action="" method="POST">
+        <div>
+            <label for="">Brand:</label>
+        <input type="text" id="brand", name="brand">
+        </div>
+        <div>
+            <label for="">Year:</label>
+        <input type="text" id="year" name="year">
+        </div>
+        <input type="submit">
+        
+    </form>
+
+</div>
+
 {% endblock %}
