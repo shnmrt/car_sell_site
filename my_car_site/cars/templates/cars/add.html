@@ -5,15 +5,17 @@
     <h1>ADD.HTML</h1>
     <h2>Add a new car to the database</h2>
     <form action="" method="POST">
-        <div>
-            <label for="">Brand:</label>
-        <input type="text" id="brand", name="brand">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="brand">Brand:</label>
+        <input class="form-control" type="text" id="brand", name="brand">
         </div>
-        <div>
-            <label for="">Year:</label>
-        <input type="text" id="year" name="year">
+        <div class="form-group">
+            <label for="year">Year:</label>
+        <input class="form-control" type="text" id="year" name="year">
         </div>
-        <input type="submit">
+        <br>
+        <input class="btn btn-primary" type="submit">
         
     </form>
 
